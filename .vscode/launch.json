@@ -1,14 +1,14 @@
 {
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Spring Boot-SpringRestApplication<crm>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.crm.crm.model.SpringRestApplication",
-            "projectName": "crm",
-            "args": ""
-        }
-    ]
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-SpringRestApplication<crm>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.crm.crm.model.SpringRestApplication",
+      "projectName": "crm",
+      "args": ""
+    }
+  ]
 }
