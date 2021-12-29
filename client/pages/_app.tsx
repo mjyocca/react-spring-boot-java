@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { GeistProvider, CssBaseline } from "@geist-ui/react";
+import { GeistProvider, CssBaseline, Page } from "@geist-ui/react";
 import { SWRConfig } from "swr";
 import fetcher from "../lib/fetcher";
 
@@ -9,7 +9,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <GeistProvider themeType="light">
         <CssBaseline />
         <SWRConfig value={{ fetcher }}>
-          <Component {...pageProps} />
+          <Page>
+            <Page.Content>
+              <Component {...pageProps} />
+            </Page.Content>
+          </Page>
         </SWRConfig>
       </GeistProvider>
     </>
