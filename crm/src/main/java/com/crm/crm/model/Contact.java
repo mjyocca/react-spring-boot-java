@@ -8,13 +8,13 @@ import lombok.Data;
 @Data
 @Entity
 public class Contact {
-    private @Id @GeneratedValue Long id;
+    public @Id @GeneratedValue Long id;
     public String firstName;
     public String lastName;
     public String email;
 
     private Contact() {}
-    
+
     public Contact(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
